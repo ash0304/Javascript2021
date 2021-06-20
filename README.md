@@ -1,2 +1,5 @@
 # Javascript2021
-Learning record Javascript 2021 complete guide
+
+## Javascript - The complete guide 2021
+- Record the process of reviewing javascript here
+- Academind by Maximilian Schwarzmüller, Online Education
