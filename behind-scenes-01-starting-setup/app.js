@@ -1,17 +1,21 @@
-var name = 'Ash';
-let hobbies;
+// var name = 'Ash';
 
-if (name === 'Ash') {
-  hobbies = ['Music', 'Swimming'];
-  console.log(hobbies);
-}
+// if (name === 'Ash') {
+//   let hobbies = ['Music', 'Swimming'];
+//   console.log(hobbies);
+// }
 
-function greet() {
-  var age = 27;
-  var name = 'Manuel';
-  console.log(name, age, hobbies);
-}
+// function greet() {
+//   var age = 27;
+//   var name = 'Manuel';
+//   console.log(name, age, hobbies);
+// }
 
-console.log(name, hobbies);
+// console.log(name, hobbies);
 
-greet();
+// greet();
+
+
+console.log(userName);
+
+var userName = 'Ash';
