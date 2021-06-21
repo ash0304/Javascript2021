@@ -15,7 +15,6 @@
 
 // greet();
 
+var userName = 'Ash';
 
 console.log(userName);
-
-var userName = 'Ash';
