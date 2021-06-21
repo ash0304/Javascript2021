@@ -1,9 +1,9 @@
 const startGameBtn = document.getElementById("start-game-btn");
 
 // 匿名函式存進變數
-const start = function() {
-  console.log("Game is starting...");
-}
+// const start = function() {
+//   console.log("Game is starting...");
+// }
 
 // const person = {
 //   name: 'Ash',
@@ -16,4 +16,6 @@ const start = function() {
 
 console.log(startGame);
 
-startGameBtn.addEventListener("click", startGame);
+startGameBtn.addEventListener("click", function () {
+  console.log("Game is starting...");
+});
