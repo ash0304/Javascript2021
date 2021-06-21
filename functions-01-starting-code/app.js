@@ -1,6 +1,7 @@
 const startGameBtn = document.getElementById("start-game-btn");
 
-function startGame() {
+// 匿名函式存進變數
+const start = function() {
   console.log("Game is starting...");
 }
 
