@@ -72,31 +72,34 @@ startGameBtn.addEventListener("click", () => {
 
 // not related to game
 // Rest parameters(Rest Operator)
-const sumUp = (resultHandler, ...numbers) => {
+const combine = (resultHandler, operator, ...numbers) => {
   const validateNumber = (number) => {
     return isNaN(number) ? 0 : number;
   };
 
   let sum = 0;
   for (const num of numbers) {
-    sum += num;
+    if (operator === 'ADD') {
+      sum += validateNumber(num);
+    } else {
+      sum -= validateNumber(num);
+    }
   }
   resultHandler(sum);
 };
 
 // hidden method - arguments (but more recommend to use rest operator)
-const subtractUp = function () {
-  let sum = 0;
-  for (const num of arguments) {
-    sum -= num;
-  }
-  return sum;
+// const subtractUp = function (resultHandler, ...numbers) {
+//   let sum = 0;
+//   for (const num of numbers) {
+//     sum -= num;
+//   }
+//   resultHandler(sum);
+// };
+
+const showResult = (messageText, result) => {
+  alert(`${messageText} ${result}`);
 };
 
-const showResult = (result) => {
-  alert(`The result after adding all numbers is: ${result}`);
-};
-
-sumUp(showResult, 1, 5, 10, -3, 6, 10);
-const result1 = subtractUp(1, 10, 15, 20);
-console.log(result1);
+combine(showResult.bind(this, 'The result after adding all numbers is:'), 'ADD', 1, 5, 10, -3, 6, 10);
+combine(showResult.bind(this, 'The result after subtracting all numbers is:'), 'SUMTRACT', 1, 10, 15, 20);
