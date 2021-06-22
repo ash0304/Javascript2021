@@ -69,3 +69,27 @@ startGameBtn.addEventListener("click", () => {
   alert(message);
   gameIsRunning = false;
 });
+
+// not related to game
+// Rest parameters(Rest Operator)
+const sumUp = (a, b, ...numbers) => {
+  let sum = 0;
+  for (const num of numbers) {
+    sum += num;
+  }
+  return sum;
+};
+
+// hidden method - arguments (but more recommend to use rest operator)
+const subtractUp = function () {
+  let sum = 0;
+  for (const num of arguments) {
+    sum -= num;
+  }
+  return sum;
+};
+
+const result = sumUp(1, 5, 10, -3, 6, 10);
+const result1 = subtractUp(1, 10, 15, 20);
+console.log(result);
+console.log(result1);
