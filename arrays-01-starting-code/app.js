@@ -1,5 +1,5 @@
-const numbers = [1, 2, 3];
-console.log(numbers);
+// const numbers = [1, 2, 3];
+// console.log(numbers);
 
 // const moreNumbers = new Array(5);
 // console.log(moreNumbers);
@@ -7,24 +7,34 @@ console.log(numbers);
 // const yetMoreNumbers = Array.of(1, 2);
 // console.log(yetMoreNumbers);
 
-const listItems = document.querySelectorAll('li');
-console.log(listItems);
+// const listItems = document.querySelectorAll('li');
+// console.log(listItems);
 
-const arrayListItems = Array.from(listItems);
-console.log(arrayListItems);
+// const arrayListItems = Array.from(listItems);
+// console.log(arrayListItems);
+
+// const personalData = [27, 'Ash', { moreDetaul: [] }];
+
+// const analyticsData = [
+//   [1, 1.6],
+//   [-5.4, 2.1],
+// ];
+
+// for (const data of analyticsData) {
+//   for (const dataPoint of data) {
+//     console.log(dataPoint);
+//   }
+// }
+
+// console.log(personalData[1]);
 
 const hobbies = ['Cooking', 'Sports'];
-const personalData = [27, 'Ash', { moreDetaul: [] }];
+hobbies.push('Reading');
+hobbies.unshift('Coding');
+const poppedValue = hobbies.pop();
+hobbies.shift();
+console.log(hobbies);
 
-const analyticsData = [
-  [1, 1.6],
-  [-5.4, 2.1],
-];
-
-for (const data of analyticsData) {
-  for (const dataPoint of data) {
-    console.log(dataPoint);
-  }
-}
-
-console.log(personalData[1]);
+hobbies[1] = 'Coding';
+hobbies[5] = 'Reading';
+console.log(hobbies, hobbies[4]);
