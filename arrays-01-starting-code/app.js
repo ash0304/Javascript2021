@@ -59,3 +59,17 @@ console.log(testResults.indexOf(1.5));
 
 const personData = [{ name: 'Ash' }, { name: 'max' }];
 console.log(personData.indexOf({ name: 'max' }));
+
+const manuel = personData.find((person, idx, persons) => {
+  return person.name === 'max';
+});
+
+manuel.name = 'Anna';
+
+console.log(manuel, personData);
+
+const ashIndex = personData.findIndex((person, idx, persons) => {
+  return person.name === 'Ash';
+});
+
+console.log(ashIndex);
