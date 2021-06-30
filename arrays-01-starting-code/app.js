@@ -48,31 +48,47 @@
 // const removeElement = hobbies.splice(-2, 1);
 // console.log(removeElement);
 
-const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
+// const testResults = [1, 5.3, 1.5, 10.99, -5, 10];
 // const storedResults = testResults.slice(0, 2);
-const storedResults = testResults.concat([3.99, 2]);
+// const storedResults = testResults.concat([3.99, 2]);
 
-testResults.push(5.91);
+// testResults.push(5.91);
 
-console.log(storedResults, testResults);
-console.log(testResults.indexOf(1.5));
+// console.log(storedResults, testResults);
+// console.log(testResults.indexOf(1.5));
 
-console.log(testResults.includes(10.99));
-console.log(testResults.indexOf(10.99) !== -1);
+// console.log(testResults.includes(10.99));
+// console.log(testResults.indexOf(10.99) !== -1);
 
-const personData = [{ name: 'Ash' }, { name: 'max' }];
-console.log(personData.indexOf({ name: 'max' }));
+// const personData = [{ name: 'Ash' }, { name: 'max' }];
+// console.log(personData.indexOf({ name: 'max' }));
 
-const manuel = personData.find((person, idx, persons) => {
-  return person.name === 'max';
+// const manuel = personData.find((person, idx, persons) => {
+//   return person.name === 'max';
+// });
+
+// manuel.name = 'Anna';
+
+// console.log(manuel, personData);
+
+// const ashIndex = personData.findIndex((person, idx, persons) => {
+//   return person.name === 'Ash';
+// });
+
+// console.log(ashIndex);
+
+const prices = [10.99, 5.99, 3.99, 6.59];
+const tax = 0.19;
+
+const taxAdjustedPrices = [];
+
+// for (const price of prices) {
+//   taxAdjustedPrices.push(price * (1 + tax));
+// }
+
+prices.forEach((price, idx, prices) => {
+  const priceObj = { index: idx, taxAdjustedPrices: price * (1 + tax) };
+  taxAdjustedPrices.push(priceObj);
 });
 
-manuel.name = 'Anna';
-
-console.log(manuel, personData);
-
-const ashIndex = personData.findIndex((person, idx, persons) => {
-  return person.name === 'Ash';
-});
-
-console.log(ashIndex);
+console.log(taxAdjustedPrices);
