@@ -163,8 +163,8 @@
 // // 取最小
 // console.log(Math.min(...prices));
 
-const nameData = ['Ash', 'Lai', 'Mr', 27];
+// const nameData = ['Ash', 'Lai', 'Mr', 27];
 // const firstName = nameData[0];
 // const lastName = nameData[1];
-const [firstName, lastName, ...otherInfo] = nameData;
-console.log(firstName, lastName, otherInfo);
+// const [firstName, lastName, ...otherInfo] = nameData;
+// console.log(firstName, lastName, otherInfo);
