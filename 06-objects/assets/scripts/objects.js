@@ -4,10 +4,13 @@ const movieList = document.getElementById('movie-list');
 movieList.style['background-color'] = 'red';
 movieList.style.display = 'block';
 
+const userChosenKeyName = 'level';
+
 let person = {
   'first-name': 'Ash',
   age: 27,
   hobbies: ['Music', 'Swimming'],
+  [userChosenKeyName]: 'test',
   greet: function () {
     alert('Hi there');
   },
@@ -22,6 +25,8 @@ let person = {
 person.age = null;
 person.isAdmin = true;
 
-console.log(person['first-name']);
+const keyName = 'first name';
+
+console.log(person[keyName]);
 console.log(person[1.5]);
 console.log(person);
