@@ -133,3 +133,13 @@ console.log(filteredArray);
 const sum = prices.reduce((prevValue, curValue) => prevValue + curValue, 0);
 
 console.log(sum);
+
+const data = 'new york;10.99;2000';
+
+const transformedData = data.split(';');
+
+console.log(transformedData);
+
+const origin = transformedData.join('');
+
+console.log(origin);
