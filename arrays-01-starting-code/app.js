@@ -142,4 +142,23 @@ console.log(transformedData);
 
 const origin = transformedData.join('');
 
-console.log(origin);
+console.log(transformedData);
+
+const copiedOrigin = [...transformedData];
+transformedData.push('Mr');
+console.log(transformedData, copiedOrigin);
+
+const testcase = [
+  { value: 1, index: 0 },
+  { value: 2, index: 1 },
+];
+
+const copiedTestcase = [...testcase.map(i => ({value: i.value, index: i.index}))];
+
+testcase.push({ value: 87, index: 2 });
+testcase[0].value = 587;
+
+console.log(testcase, copiedTestcase);
+
+// 取最小
+console.log(Math.min(...prices));
